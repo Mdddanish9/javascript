@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var let and const</title>
+</head>
+<body>
+  <script>
+    var a=20;  /* global scope */
+    a=40;
+    document.write("value of a :"+a+"<br>");
+    // let keyword - block scope 
+    let b=20;
+    //let a=30; --> value error 
+
+    document.write("vlalue of b :"+ b+"<br>");
+    {
+    let b=40;
+    document.write("vlalue of b :"+ b+"<br>");
+
+    }
+        document.write("vlalue of b :"+ b+"<br>");
+
+        const pi=3.14;
+         document.write("vlalue of PI:"+ pi+"<br>");
+  </script>
+</body>
+</html>
