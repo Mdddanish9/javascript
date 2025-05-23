@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+    <script>
+        // var i;
+        // i=1;
+        // while(<=10){
+        //     document.write(i+"<br>");
+        //     i++;
+        // }
+        // while(true){
+        //     document.write("Hello<br>");
+        //     x=prompt("Enter Y to stop execution");
+        //     if(x=="Y"){
+        //         break;
+        //     }            
+        
+        // }
+
+        let currency;
+            let value;
+            let total = 0;
+            while(true){
+                currency=(prompt("Currency is present enter y:"));
+                if (currency == "y"){
+                    value=parseInt(prompt("Enter the Note amount:"));
+                    if (value  == 10 ||  value == 20 || value == 50 || value == 100 || value == 500){
+                    document.write(value + " Real currency" +"<br>");
+                    total+=value;
+                    }
+                    else{
+                   document.write( "Fake currency" +"<br>");
+                    }
+                }
+                else{
+                break;
+                }
+            }
+            document.write(total);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
